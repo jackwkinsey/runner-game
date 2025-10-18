@@ -1,0 +1,41 @@
+{
+    "name": "runner-game",
+    "type": "module",
+    "description": "A Phaser 3 TypeScript template using Vite.",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jackwkinsey/runner-game.git"
+    },
+    "author": "Jack Kinsey <jack@hexbitstudios.com> (https://hexbitstudios.com)",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url": "https://github.com/jackwkinsey/runner-game/issues"
+    },
+    "homepage": "https://github.com/jackwkinsey/runner-game#readme",
+    "scripts": {
+        "dev": "node log.js dev & vite --config vite/config.dev.mjs",
+        "build": "node log.js build & vite build --config vite/config.prod.mjs",
+        "dev-nolog": "vite --config vite/config.dev.mjs",
+        "build-nolog": "vite build --config vite/config.prod.mjs",
+        "lint": "eslint src --ext .ts,.tsx",
+        "lint:fix": "eslint src --ext .ts,.tsx --fix",
+        "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+        "format:check": "prettier --check \"src/**/*.{ts,tsx,json,md}\""
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.9.1",
+        "@typescript-eslint/eslint-plugin": "^8.4.0",
+        "@typescript-eslint/parser": "^8.4.0",
+        "eslint": "^9.9.1",
+        "prettier": "^3.1.1",
+        "typescript": "~5.7.2",
+        "typescript-eslint": "^8.46.1",
+        "vite": "^6.3.1"
+    },
+    "dependencies": {
+        "phaser": "^3.90.0",
+        "terser": "^5.39.0"
+    }
+}
